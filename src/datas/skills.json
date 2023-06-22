@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Développement",
+        "description": [
+            "HTML / CSS",
+            "JavaScript",
+            "React",
+            "React Router",
+            "Node.js",
+            "MongoDB",
+            "Express"
+        ]
+    },
+    {
+        "name": "Outils",
+        "description": [
+            "VSCode",
+            "GituHub",
+            "Figma"
+        ]
+    },
+    {
+        "name": "Autres",
+        "description": [
+            "Travail d'équipe",
+            "Adaptation",
+            "Polyvalent",
+            "Sérieux",
+            "Méthode agile"
+        ]
+    }
+]
