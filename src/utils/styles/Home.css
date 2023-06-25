@@ -67,10 +67,13 @@
 
 /* Compétences */
 .skills {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     background-color: #264653;
+    padding: 0 50px;
+    
 }
 .skills__title {
     align-self: center;
@@ -81,8 +84,11 @@
 .skills__container__aside {
     display: flex;
     justify-content: space-around;
-    padding: 0 12px;
     margin-bottom: 130px;
+    /* width: 100%; */
+
+    /* padding: 0 clamp(12px, 10vw, 100px); */
+    /* max-width: 1400px; */
 }
 .skills__collapse {
     width: 100%;
@@ -145,6 +151,9 @@
 }
 
 @media screen and (max-width: 767px) {
+    .skills {
+        padding: 0 12px;
+    }
     .intro__div {
         flex-direction: column;
         justify-content: space-between;

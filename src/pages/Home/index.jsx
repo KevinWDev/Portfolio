@@ -5,7 +5,7 @@ import DataSkills from '../../datas/skills.json'
 // Styles
 import '../../utils/styles/Home.css';
 // Assets
-import imgProfil from '../../assets/kevin2.jpg';
+import imgProfil from '../../assets/kevin.jpg';
 import logoJs from '../../assets/logo/logoJs.png';
 import logoCss from '../../assets/logo/logoCss.png';
 import logoHtml from '../../assets/logo/logoHtml.png';
@@ -68,11 +68,11 @@ function Home() {
         <h2 className="skills__title">Mes compétences</h2>
 
         <div className="skills__container__aside">
-
+            
             {DataSkills.map((data, index) => {
               return (
                 <aside className='skills__collapse' key={index}>
-                  <Collapse className="" name={data.name}>
+                  <Collapse name={data.name}>
                     {
                       data.description.map((infos, index) => {
                         return (
@@ -81,26 +81,9 @@ function Home() {
                       })
                     }
                   </Collapse>
-                </aside>
+                </aside>            
               )
             })}
-       
-          {/* <aside className="skills__collapse">
-            <Collapse name="Description">
-              HTML / CSS
-              <br /> JavaScript <br /> React <br /> React Router <br />
-              Node.js <br /> MongoDB <br /> Express
-            </Collapse>
-          </aside>
-
-          <aside className="skills__collapse">
-            <Collapse name="Compétences">Teste</Collapse>
-          </aside>
-
-          <aside className="skills__collapse">
-            <Collapse name="Autres"></Collapse>
-          </aside> */}
-
         </div>
 
         <div className="skills__container__logo">
@@ -109,7 +92,7 @@ function Home() {
           <img src={logoHtml} alt="" />
           <img src={logoReact} alt="" />
         </div>
-
+         
       </section>
     </main>
   );
