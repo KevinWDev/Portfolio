@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Composants / Pages
 import Home from './pages/Home/index.jsx';
 import Header from './components/Header'
-// import Projets from './pages/Projets';
+import Projets from './pages/Projets';
 import Footer from './components/Footer';
 // Styles
 import './utils/styles/index.css';
@@ -18,7 +18,7 @@ root.render(
       <Header />
       <Routes>
           <Route path='/' element={<Home />}></Route>
-          {/* <Route path='/projets' element={<Projets />}></Route> */}
+          <Route path='/projets' element={<Projets />}></Route>
       </Routes>
       <Footer />
     </Router>
