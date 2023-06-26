@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "title": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+        "date": 2023,
+        "mission": "Création d'une page web en html/css sans framework en suivant une maquette Figma au pixel près.",
+        "cover": "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/DesktopBooki.png",
+        "images": [
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/booki/DesktopBooki.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/booki/TabletteBooki.png"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Créez une page web dynamique avec JavaScript",
+        "date": 2023,
+        "mission": "Création d'une page dynamique, utilisation de Fetch afin de récupérer les données. Dans le projet j'ai ajouté les travaux de l'architecte dynamiquement et donnait la possibilité de filtrer les travaux par catégories. J'ai géré l'authentification de l'utilisateur par token et j'ai ajouté une modale pour permettre à l'architecte d'ajouter ou de supprimer des travaux.",
+        "cover": "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/SophieBluelHome.png",
+        "images": [
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/SophieBluel/SB_Homepage.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/SophieBluel/SB_Homepage_edit_1.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/SophieBluel/SB_Homepage_edit_3.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/SophieBluel/SB_Login.png"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Créez une application web de location immobilière avec React",
+        "date": 2023,
+        "mission": "Démarrer le projet avec React et développer l'ensemble  de l'application, les composants React, implémenter des routes avec React Router et suivre les maquettes Figma (responsive).",
+        "cover": "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/Kasa_Home800.png",
+        "images": [
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/kasa/Kasa_A-Propos.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/kasa/Kasa_Fiche-Logement.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/kasa/Kasa_M_A-Propos.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/kasa/Kasa_M_Fiche-Logement.png"
+        ]
+    },
+    {
+        "id":  4,
+        "title": "Débugguez et optimisez un site de photographe",
+        "date": 2023,
+        "mission": "Optimiser le site en redimensionnant les images, compresser les images afin de les rendre moins volumineuses. Minifier les fichiers CSS, JS pour réduire le poids des fichiers et améliorer le chargement de la page. Accessibilité du site : changements  sémantiques, contraste de couleurs etc... Ajout du référencement local (information de l'entreprise) et ajout des réseaux sociaux avec les balises meta Twitter et Open Graph.",
+        "cover": "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/imgNina.png",
+        "images": [
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/NinaCarducci/lighthouse_nina_carducci_perform.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/NinaCarducci/LigthouseApres.png" 
+        ]
+    },
+    {
+        "id":  5,
+        "title": "Développez le back-end d'un site de notation de livres",
+        "date": 2023,
+        "mission": "Ma mission était de développer le backend d'une application de livres en utilisant Express, MongoDB, mongoose, bcrypt, jsonwebtoken etc.. en suivant les spécifications techniques de l'API.",
+        "cover": "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/AccueilMVG.png",
+        "images": [
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Accueil.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Ajout%20Livre%20filled.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Success%20ajout.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Single_livre_admin.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Single_livre_delete.png"
+        ]
+    }
+
+]
