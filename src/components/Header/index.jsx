@@ -1,6 +1,10 @@
-import { Link } from 'react-router-dom';
+// Assets
 import btnMenu from '../../assets/btn-menu.png';
+// Styles
 import '../../utils/styles/Header.css';
+// Link
+import { Link } from 'react-router-dom';
+// Hooks
 import { useState, useEffect, useRef } from 'react';
 
 
@@ -33,12 +37,13 @@ let menuRef = useRef();
   return isOpen ? (
 
     <header ref={menuRef}>
+
       <div className="container__open">
         <Link className='nav__link' to='/'>
           <h1 className='header__title'>Kevin Watteau</h1>
         </Link>
       
-      <button className='btn__nav__close' onClick={() => setIsOpen(false)}><p>X</p></button>
+        <button className='btn__nav__close' onClick={() => setIsOpen(false)}><p>X</p></button>
       </div>
   
       <nav className='navigation'>
@@ -49,10 +54,13 @@ let menuRef = useRef();
       </nav>
     
     </header>
+
   ) : (
 
     <header>
+
       <div className="container__close">
+
         <Link to='/' className='nav__link'>
           <h1 className='header__title'>Kevin Watteau</h1>
         </Link>
@@ -65,7 +73,9 @@ let menuRef = useRef();
             onClick={() => setIsOpen(true)}
           />
         </div>
+
       </div>
+
     </header>
   
   );

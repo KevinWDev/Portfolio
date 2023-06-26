@@ -1,14 +1,9 @@
+// Data
+import datas from '../../datas/datas.json'
 // Composants
 import Card from '../../components/Card'
 // Styles
 import '../../utils/styles/Projets.css'
-// Assets
-import imgKasa from '../../assets/images/Kasa_Home800.png'
-import imgMVG from '../../assets/images/AccueilMVG.png'
-import imgNina from '../../assets/images/imgNina.png'
-import imgDesc from '../../assets/images/DesktopBooki.png'
-import imgSB from '../../assets/images/SophieBluelHome.png'
-
 
 function Projets() {
 
@@ -18,7 +13,7 @@ function Projets() {
         <main>
 
             <div className="projetsDiv">
-                <h1 className="projetsDiv__title">Mes projets</h1>
+                <h2 className="projetsDiv__title">Mes projets</h2>
             </div>
 
             <section className='containerProjets'>
@@ -26,13 +21,17 @@ function Projets() {
                 <div className='containerProjets__div'>
 
                     <div className='containerProjets__div__grid'>
-            
-                        <Card image={imgDesc}/>
-                        <Card image={imgSB}/>
-                        <Card image={imgKasa}/>
-                        <Card image={imgMVG}/>
-                        <Card image={imgNina}/>
-                         
+                        {datas.map((data, index) => {
+                            return (
+                                <Card 
+                                id={data.id}
+                                key={index} 
+                                image={data.cover}
+                                title={data.title}
+                                /> 
+                            )
+                        })}
+                                
                     </div>
 
                 </div>
