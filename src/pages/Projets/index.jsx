@@ -21,8 +21,8 @@ function Projets() {
                 <div className='containerProjets__div'>
 
                     <div className='containerProjets__div__grid'>
-                        {datas.map((data, index) => {
-                            return (
+                        {datas.map((data, index) => 
+                             (
                                 <Card 
                                 id={data.id}
                                 key={index} 
@@ -30,7 +30,7 @@ function Projets() {
                                 title={data.title}
                                 /> 
                             )
-                        })}
+                    )}
                                 
                     </div>
 

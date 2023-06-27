@@ -1,11 +1,20 @@
+import { useNavigate } from 'react-router-dom';
 import '../../utils/styles/Card.css'
 
 
 function Card({ id, image, title }) {
 
+let navigate = useNavigate();
+
+function getInfos() {
+    let path = ("../infos/"+id)
+    navigate(path)
+}
+
+
     return (
 
-        <div className='card'>
+        <div className='card' onClick={() => getInfos()}>
           
             <img className='card__img' src={image} alt="" />
 
