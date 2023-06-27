@@ -9,6 +9,7 @@ import Projets from './pages/Projets';
 import Footer from './components/Footer';
 import Contact from './pages/Contact/index.jsx';
 import Error from './pages/Error/index.jsx';
+import Infos from './pages/Infos/index.jsx';
 // Styles
 import './utils/styles/index.css';
 
@@ -19,10 +20,12 @@ root.render(
     <Router>
       <Header />
       <Routes>
-          <Route path='/home' element={<Home />}></Route>
-          <Route path='*' element={<Error />}></Route>
+        <Route index element={<Home />}/>
+          <Route path='/' element={<Home />}></Route>
           <Route path='/projets' element={<Projets />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/infos/:id/' element={<Infos />}></Route>
+          <Route path='*' element={<Error />}></Route>
       </Routes>
       <Footer />
     </Router>
