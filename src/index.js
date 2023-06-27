@@ -20,8 +20,8 @@ root.render(
     <Router>
       <Header />
       <Routes>
-          <Route index element={<Home />}></Route>
-          <Route path='/home' element={<Home />}></Route>
+        
+          <Route path='/' element={<Home />}></Route>
           <Route path='/projets' element={<Projets />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/infos/:id/' element={<Infos />}></Route>
