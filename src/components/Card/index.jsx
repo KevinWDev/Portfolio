@@ -1,5 +1,7 @@
+// Hooks
 import { useNavigate } from 'react-router-dom';
-import '../../utils/styles/Card.css'
+// Styles
+import '../../utils/styles/Card.css';
 
 
 function Card({ id, image, title }) {
@@ -7,9 +9,9 @@ function Card({ id, image, title }) {
 let navigate = useNavigate();
 
 function getInfos() {
-    let path = ("../infos/"+id)
-    navigate(path)
-}
+    let path = ("../infos/"+id);
+    navigate(path);
+};
 
 
     return (

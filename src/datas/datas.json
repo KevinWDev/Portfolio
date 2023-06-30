@@ -9,9 +9,15 @@
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/booki/DesktopBooki.png",
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/booki/TabletteBooki.png"
         ],
-        "lien": [
-            "https://github.com/KevinWDev/BOOKI",
-            "https://kevinwdev.github.io/BOOKI/"
+        "links": [
+            {
+                "name": "Lien vers github",
+                "link": "https://github.com/KevinWDev/BOOKI"
+            },
+            {
+                "name": "Démo",
+                "link": "https://kevinwdev.github.io/BOOKI/"
+            }
         ]
     },
     {
@@ -26,8 +32,12 @@
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/SophieBluel/SB_Homepage_edit_3.png",
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/SophieBluel/SB_Login.png"
         ],
-        "lien": [
-            "https://github.com/KevinWDev/Portfolio_De_Sophie_Bluel"
+        "links": [
+            {
+                "name": "Lien vers github",
+                "link": "https://github.com/KevinWDev/Portfolio_De_Sophie_Bluel"
+            }
+            
         ]
     },
     {
@@ -42,8 +52,17 @@
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/kasa/Kasa_M_A-Propos.png",
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/kasa/Kasa_M_Fiche-Logement.png"
         ],
-        "lien": [
-            "https://github.com/KevinWDev/Kasa"
+        "links": [
+            {
+                "name": "Lien vers github",
+                "link": "https://github.com/KevinWDev/Kasa"
+            },
+            {
+                "name": "Démo",
+                "link": "https://kevinwdev.github.io/Kasa"
+            }
+            
+            
         ]
     },
     {
@@ -56,8 +75,15 @@
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/NinaCarducci/lighthouse_nina_carducci_perform.png",
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/NinaCarducci/LigthouseApres.png" 
         ],
-        "lien": [
-            "https://github.com/KevinWDev/Nina-Carducci"
+        "links": [
+            {
+                "name": "Lien vers github",
+                "link": "https://github.com/KevinWDev/Nina-Carducci"
+            },
+            {
+                "name": "Démo",
+                "link": "https://kevinwdev.github.io/Nina-Carducci/"
+            }
         ]
     },
     {
@@ -73,8 +99,11 @@
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Single_livre_admin.png",
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Single_livre_delete.png"
         ],
-        "lien": [
-            "https://github.com/KevinWDev/Mon-Vieux-Grimoire"
+        "links": [
+            {
+                "name":"Lien vers github",
+                "link": "https://github.com/KevinWDev/Mon-Vieux-Grimoire"
+            }  
         ]
     }
 

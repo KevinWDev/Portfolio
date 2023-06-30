@@ -1,9 +1,12 @@
-
+// Styles
+import '../../utils/styles/Button.css';
 
 function Button({ lien, name}) {
     return (
-        <a href={lien}>{name}</a>
-    )
-}
+        <div>
+             <a type='button' className='bouton' href={lien} aria-label='Lien'>{name}</a>
+        </div>
+    );
+};
 
-export default Button
+export default Button;

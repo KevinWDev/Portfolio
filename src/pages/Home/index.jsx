@@ -1,7 +1,7 @@
 // Composants
 import Collapse from '../../components/Collapse';
 // Datas
-import DataSkills from '../../datas/skills.json'
+import DataSkills from '../../datas/skills.json';
 // Styles
 import '../../utils/styles/Home.css';
 // Assets
@@ -13,7 +13,7 @@ import logoReact from '../../assets/logo/logoReact.png';
 
 
 function Home() {
-  console.log(DataSkills);
+
   return (
 
     <main>
@@ -96,6 +96,6 @@ function Home() {
       </section>
     </main>
   );
-}
+};
 
 export default Home;

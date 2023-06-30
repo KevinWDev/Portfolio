@@ -1,8 +1,21 @@
+// Hooks
+import { useRef, useEffect } from 'react';
 // Styles
-import '../../utils/styles/Contact.css'
+import '../../utils/styles/Contact.css';
+
 
 function Contact() {
-    
+
+    const iframeRef = useRef(null);
+
+    useEffect(() => {
+        if(iframeRef.current) {
+            iframeRef.current.setAttribute('frameborder', '0');
+            iframeRef.current.setAttribute('marginwidth', '0');
+            iframeRef.current.setAttribute('marginheight', '0');
+        };
+    }, []);
+
     return (
 
         <main>
@@ -12,27 +25,17 @@ function Contact() {
            </div>
 
            <section className='contact'>
-            {/* <div className='contact__div'> */}
+              
+        <div className='contact__div__iframe'>
 
-                <form action="" className='formulaire'>
-
-                    <label htmlFor="name">Nom</label>
-                    <input className='formulaire__input' type="text" id="name" name="name" placeholder='Nom Prenom'/>
-
-                    <label htmlFor="email">Email</label>
-                    <input className='formulaire__input' type="text" id="email" name="name" placeholder='adressemail@outlook.fr'/>
-
-                    <label htmlFor="message">Message</label>
-                    <textarea className='formulaire__textarea' name="message" id="message" cols="30" rows="15" placeholder='Écrivez votre message ici.'></textarea>
-
-                    <input className='formulaire__submit' type="submit" value="Envoyer" />
-                </form>
-            {/* </div> */}
+           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLb5QejAATHq7o2bzpxlq9aMqf3bPpVr6UNUcm-WPnEoFdyg/viewform?embedded=true" width="100%" height="100%" ref={iframeRef} title='Formulaire de contact'>Chargement…</iframe>
+        </div>
+         
 
            </section>
 
         </main>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;

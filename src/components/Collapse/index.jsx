@@ -1,11 +1,14 @@
+// Hooks
 import { useState } from "react";
+// Styles
+import '../../utils/styles/Collapse.css';
+// Assets
 import arrowUp from '../../assets/arrows/arrowUp.png';
-import arrowDown from '../../assets/arrows/arrowDown.png'
-import '../../utils/styles/Collapse.css'
+import arrowDown from '../../assets/arrows/arrowDown.png';
 
 function Collapse({ name, children }) {
 
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(true);
 
 
     return isOpen ? (
@@ -28,4 +31,4 @@ function Collapse({ name, children }) {
     );
 };
 
-export default Collapse
+export default Collapse;

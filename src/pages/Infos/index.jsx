@@ -1,7 +1,10 @@
+// Data
 import datas from '../../datas/datas.json'
+//Hooks
 import { useParams } from 'react-router-dom';
-import '../../utils/styles/Infos.css'
-// import { Link } from 'react-router-dom';
+// Styles
+import '../../utils/styles/Infos.css';
+// Composants / Pages
 import Button from '../../components/Button';
 
 
@@ -13,27 +16,51 @@ function Infos() {
     console.log(data);
 
     return (
+
         <main>
+
             <div className='infos'>
-                <h2>{data.title}</h2>
-                <p>{data.date}</p>
-                <aside>{data.mission}</aside>
-                <div className='infos__img'>
+
+                <div className='infos__container__all'>
+                    <h2 className='infos__title'>{data.title}</h2>
+                    <p className='infos__date'><span>Date :</span> {data.date}</p>
+                    <aside className='infos__mission'><span>Mission :</span> <br /> {data.mission}</aside>
+
+                    <div className='container__infos__button'>
+
+                        {data.links.map((e, index) => {
+
+                            return (
+
+                                <div className='container__button' key={index}>
+                                    <Button 
+                                        lien={e.link}
+                                        name={e.name}
+                                    />
+                                </div>
+                          )
+                        })}
+                    </div>
+                </div>
+
+
+                <div className='container__img'>
+                    <div className='container__infos__img'>
+
                     {data.images.map((image, index) => {
                         return (
-                            <div key={index}>
+
+                            <div className="infos__img" key={index}>
                                 <img src={image} alt="" />
                             </div>
                         )
                     })}
+                    </div>
                 </div>
-                <Button 
-                    lien="https://google.com"
-                    name="google"
-                />
+
             </div>
         </main>
     );
 };
 
-export default Infos
+export default Infos;

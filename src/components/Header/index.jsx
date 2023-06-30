@@ -13,25 +13,25 @@ function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-let menuRef = useRef();
-  useEffect(() => {
+  let menuRef = useRef();
+    useEffect(() => {
 
-    let handler = (e) => {
-      if(menuRef.current) {
-        if (!menuRef.current.contains(e.target)) {
+      let handler = (e) => {
+        if(menuRef.current) {
+          if (!menuRef.current.contains(e.target)) {
           setIsOpen(false)
-        }
-      }
-      }
+          };
+        };
+      };
       
-    document.addEventListener("mousedown", handler)
+      document.addEventListener("mousedown", handler)
 
-    return () => {
+      return () => {
       document.removeEventListener("mousedown", handler)
-    }
+      };
 
     
-  }, [])
+    }, []);
 
 
   return isOpen ? (
@@ -49,7 +49,7 @@ let menuRef = useRef();
       <nav className='navigation'>
         <Link className='nav__link' to="/" onClick={() => setIsOpen(false)}>Accueil</Link>
         <Link className='nav__link' to="/projets" onClick={() => setIsOpen(false)}>Projets</Link>
-        <a className='nav__link' href="../../assets/Cv/Kevin.pdf" download>Mon Cv</a>
+        <a className='nav__link' href="../../assets/Cv/Kevin.pdf" download>Télécharger mon CV</a>
         <Link className='nav__link' to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
       </nav>
     
@@ -79,6 +79,6 @@ let menuRef = useRef();
     </header>
   
   );
-}
+};
 
 export default Header;

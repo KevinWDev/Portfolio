@@ -1,0 +1,13 @@
+.bouton {
+    background-color: #28292E;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: clamp(16px, 3vw, 20px);
+}

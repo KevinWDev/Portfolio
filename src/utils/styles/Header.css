@@ -71,10 +71,6 @@ header {
 .nav__link:hover:after {
     transform: scaleX(1);
 }
-/* .nav__link:hover {
-    border-bottom: 3px solid #00FFD4;
-}  */
-
 
 @media screen and (max-width: 768px) {
     .container__open {
