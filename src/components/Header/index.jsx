@@ -1,5 +1,6 @@
 // Assets
 import btnMenu from '../../assets/btn-menu.png';
+import cvFile from '../../assets/Cv/Kevin.pdf'
 // Styles
 import '../../utils/styles/Header.css';
 // Link
@@ -33,6 +34,12 @@ function Header() {
     
     }, []);
 
+      const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = cvFile;
+        link.download = 'Kevin.pdf';
+        link.click();
+      };
 
   return isOpen ? (
 
@@ -49,7 +56,7 @@ function Header() {
       <nav className='navigation'>
         <Link className='nav__link' to="/" onClick={() => setIsOpen(false)}>Accueil</Link>
         <Link className='nav__link' to="/projets" onClick={() => setIsOpen(false)}>Projets</Link>
-        <a className='nav__link' href="../../assets/Cv/Kevin.pdf" download>Télécharger mon CV</a>
+        <button className='nav__link nav__link__cv' onClick={handleDownload}>Télécharger mon CV</button>
         <Link className='nav__link' to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
       </nav>
     
@@ -79,6 +86,6 @@ function Header() {
     </header>
   
   );
-};
+}
 
 export default Header;

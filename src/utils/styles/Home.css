@@ -17,6 +17,15 @@
     font-size: clamp(24px, 3vw, 50px);
     color: #264653;
 }
+.intro__word {
+    /* font-family: IBM Plex Mono, monospace; */
+    width: max-content;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    animation: typing 3s steps(20) 1s;
+}
 .intro__div__img {
     width: clamp(180px, 18vw, 300px);
     height: clamp(180px, 18vw, 300px);
@@ -96,6 +105,16 @@
     height: clamp(48px, 10vw, 102px);
 }
 
+
+/* Animations */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 991px) {
     .skills__container__aside {

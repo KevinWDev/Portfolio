@@ -1,7 +1,7 @@
 // Composants
 import Collapse from '../../components/Collapse';
 // Datas
-import DataSkills from '../../datas/skills.json';
+import DataSkills from '../../data/skills.json';
 // Styles
 import '../../utils/styles/Home.css';
 // Assets
@@ -22,7 +22,7 @@ function Home() {
         <div className="intro__div">
 
           <h2 className="intro__title">
-            Bonjour, <br />
+            <span className='intro__word'>Bonjour,</span> <br />
             je suis Kevin Watteau,
             <br />
             développeur front-end.

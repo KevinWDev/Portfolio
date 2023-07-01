@@ -94,8 +94,8 @@
         "cover": "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/AccueilMVG.png",
         "images": [
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Accueil.png",
-            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Ajout%20Livre%20filled.png",
-            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Success%20ajout.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Ajout_Livre_filled.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Success_ajout.png",
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Single_livre_admin.png",
             "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/MVG/MVG_Single_livre_delete.png"
         ],

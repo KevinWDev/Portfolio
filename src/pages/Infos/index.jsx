@@ -1,5 +1,5 @@
 // Data
-import datas from '../../datas/datas.json'
+import datas from '../../data/data.json'
 //Hooks
 import { useParams } from 'react-router-dom';
 // Styles
@@ -13,7 +13,7 @@ function Infos() {
     const { id } = useParams();
    
     let data = datas.find((d) => d.id === id)
-    console.log(data);
+
 
     return (
 

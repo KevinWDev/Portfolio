@@ -1,5 +1,5 @@
 // Data
-import datas from '../../datas/datas.json';
+import data from '../../data/data.json';
 // Composants
 import Card from '../../components/Card';
 // Styles
@@ -16,7 +16,7 @@ function Projets() {
       <section className="containerProjets">
         <div className="containerProjets__div">
           <div className="containerProjets__div__grid">
-            {datas.map((data, index) => (
+            {data.map((data, index) => (
               <Card
                 id={data.id}
                 key={index}

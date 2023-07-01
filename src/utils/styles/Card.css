@@ -43,20 +43,45 @@
     align-self: flex-end;
     margin-bottom: 23px;
     font-weight: 700;
-
+    margin-right:  clamp(15px, 3vw, 60px);
 }
-
 .card__span{
     color: white;
     font-size: 16px;
-
-    padding-right:  clamp(15px, 3vw, 60px);
 }
 .card__span__arrow {
   width: 16px;
   height: 16px;
 }
+.card__hover:hover .card__div__span{
+    animation: slide 350ms ease-in-out;
+}
+.card__hover:hover .card__title__container {
+    animation: shake 200ms ease-in-out;
+    animation-iteration-count: 2;
+}
 
 .card__hover:hover {
     opacity: 0.9;
 }
+
+/* Animations */
+@keyframes slide {
+    0% {
+     transform: translateX(100%);
+     opacity: 0;
+    }
+    100% {
+     transform: translateY(0);
+     opacity: 1;
+    } 
+ }
+ 
+ @keyframes shake {
+     25% {
+         transform: translateX(1%);
+     }
+     75% {
+         transform: translateX(-1%);
+     }
+ }

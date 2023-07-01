@@ -3,7 +3,7 @@
 }
 .collapseOpen {
     border-radius: 25px 25px 10px 10px;
-    background-color: white;
+    background-color: white; 
 }
 .collapse__button {
     width: 100%;
@@ -21,10 +21,23 @@
 }
 .collapse__children {
     padding: 25px;
+    animation: scale__up__collapse 300ms ease-in-out;
+    transform-origin: top;
 }
 .collapse__img__arrow {
     width: clamp(16px, 2vw, 24px);
     height: clamp(9px, 1vw, 14px);
+}
+
+/* Animations */
+@keyframes scale__up__collapse {
+    0% {
+        transform: scaleY(0);
+
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 
 @media screen and (max-width: 991px) {
