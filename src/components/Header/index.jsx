@@ -13,6 +13,7 @@ import { useState, useEffect, useRef } from 'react';
 function Header() {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isAnimationActive, setAnimationActive] = useState(null)
 
   let menuRef = useRef();
     useEffect(() => {
@@ -41,6 +42,10 @@ function Header() {
         link.click();
       };
 
+      function handleClickButton() {
+        setAnimationActive(!isAnimationActive || isAnimationActive)
+      }
+
   return isOpen ? (
 
     <header ref={menuRef}>
@@ -50,7 +55,10 @@ function Header() {
           <h1 className='header__title'>Kevin Watteau</h1>
         </Link>
       
-        <button className='btn__nav__close' onClick={() => setIsOpen(false)}><p>X</p></button>
+        <button className={`btn__nav__close ${isAnimationActive ? 'animate__button__close' : ''}`} onClick={() => {
+        setIsOpen(false)
+        handleClickButton()
+        }}><p>X</p></button>
       </div>
   
       <nav className='navigation'>
@@ -74,10 +82,13 @@ function Header() {
 
         <div className='container__img'>
           <img
-            className="btn__menu"
+            className={`btn__menu ${isAnimationActive ? 'animate__button__img' : ''}`}
             src={btnMenu}
             alt=""
-            onClick={() => setIsOpen(true)}
+            onClick={() => { 
+              setIsOpen(true)
+              handleClickButton()
+            }}
           />
         </div>
 

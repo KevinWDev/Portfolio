@@ -6,8 +6,8 @@
         "mission": "Création d'une page web en html/css sans framework en suivant une maquette Figma au pixel près.",
         "cover": "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/DesktopBooki.png",
         "images": [
-            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/booki/DesktopBooki.png",
-            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/booki/TabletteBooki.png"
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/booki/Desktop.png",
+            "https://raw.githubusercontent.com/KevinWDev/Portfolio/main/src/assets/images/booki/Tablette.png"
         ],
         "links": [
             {

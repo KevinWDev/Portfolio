@@ -31,7 +31,12 @@ header {
 
 .btn__menu {
     cursor: pointer;
+}
+.animate__button__close {
     animation: rotateBtnMenu 300ms linear;
+}
+.animate__button__img {
+    animation: rotateBtnMenu 500ms linear;
 }
 .btn__nav__close {
     cursor: pointer;
@@ -39,8 +44,6 @@ header {
     z-index: 1;
     background-color: initial;
     border: none;
-    animation: rotateBtnMenu 500ms linear;
-
 }
 .btn__nav__close p {
     font-size: 20px;
