@@ -9,7 +9,8 @@
 }
 .projetsDiv__title {
     font-size: clamp(24px, 5vw, 50px);
-    color: #00FFD4;
+    /* color: #00FFD4; */
+    color: white;
 }
 .containerProjets {
     display: flex;
