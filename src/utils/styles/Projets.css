@@ -4,25 +4,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #F9F6E7;
+    background: #264653;
     margin-top: 60px;
 }
 .projetsDiv__title {
     font-size: clamp(24px, 5vw, 50px);
-    color: #264653;
+    color: #00FFD4;
 }
 .containerProjets {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #264653;
     padding: 0 50px;
 }
 .containerProjets__div {
     width: 100%;
     max-width: 1400px;
-    background: #F9F6E7;
+    background: #28292E;
     margin: 90px 0;
     border-radius: 25px;
 
