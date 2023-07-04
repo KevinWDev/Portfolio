@@ -1,5 +1,5 @@
 .projetsDiv {
-    min-height: clamp(210px, 50vw, 360px); 
+    min-height: clamp(150px, 40vw, 360px); 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,6 @@
 }
 .projetsDiv__title {
     font-size: clamp(24px, 5vw, 50px);
-    /* color: #00FFD4; */
     color: white;
 }
 .containerProjets {
@@ -45,8 +44,7 @@
         padding: 0 12px;
     }
     .containerProjets__div {
-        margin-top: 42px;
-        margin-bottom: 85px;
+        margin: 40px 0;
     }
     .containerProjets__div__grid {
         grid-template-columns: 1fr;

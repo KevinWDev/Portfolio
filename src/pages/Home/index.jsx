@@ -23,7 +23,7 @@ function Home() {
 
           <h2 className="intro__title">
             <div className='intro__container__span'>
-              <span className='intro__word'>Bonjour,</span> <br />
+              <span className='intro__word'>Bonjour,</span>
               <span className='hand'>👋🏻</span>
             </div>
             je suis <span className='myName'>Kevin Watteau</span>,

@@ -11,7 +11,7 @@
 }
 .contact__text__title {
     text-align: center;
-    font-size: clamp(18px, 4vw, 24px);
+    font-size: clamp(20px, 4vw, 24px);
     line-height: 42px;
 }
 
