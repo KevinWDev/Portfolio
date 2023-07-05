@@ -12,15 +12,9 @@ import Error from './pages/Error/index.jsx';
 import Infos from './pages/Infos/index.jsx';
 // Styles
 import './utils/styles/index.css';
-// 404
-const is404Page = window.location.pathname === '/404.html'
 
-// Root
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-if (is404Page) {
-  root.render(<Error />)
-} else {
   root.render(
     <React.StrictMode>
       <Router basename='/Portfolio'>
@@ -37,7 +31,7 @@ if (is404Page) {
       
     </React.StrictMode>
   );
-}
+
 
 
 
