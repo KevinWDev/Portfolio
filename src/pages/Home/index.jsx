@@ -47,7 +47,7 @@ function Home() {
           <div className="propos__div__paragraphe">
             <p>
               J’ai décidé de me former dans le métier de développeur web côté
-              front-end en suivant une formation avec OpenClassrooms qui m’a
+              front-end en suivant une formation de <b>développeur intégrateur/web enregistrée au Répertoire National des Certifications Professionnelles avec OpenClassrooms</b> qui m’a
               permis de gagner en compétences à travers différents projets que
               j’ai réalisés durant cette formation.
             </p>
@@ -55,7 +55,7 @@ function Home() {
             <p>
               Dans ce portfolio vous trouverez les différents projets que j’ai
               réalisés. <b>Passionné et motivé</b> aujourd’hui je souhaite
-              travailler en tant que développeur front-end{' '}
+              travailler en tant que développeur front-end
               <b>
                 afin de développer mes compétences tout en produisant des
                 applications de qualité.

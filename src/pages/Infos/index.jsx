@@ -25,6 +25,24 @@ function Infos() {
                     <h2 className='infos__title'>{data.title}</h2>
                     <p className='infos__date'><span>Date :</span> {data.date}</p>
                     <aside className='infos__mission'><span>Mission :</span> <br /> {data.mission}</aside>
+                   
+                    {data.problematique.map((e, index) => {
+
+                        return (
+                            <div key={index}>
+
+                                <aside className='infos__probleme'><span>Problèmes :</span>  <br />
+                                {e.probleme}
+                                </aside>
+
+                                <aside className='infos__solution'><span>Solutions :</span>  <br />
+                                {e.solution}
+                                </aside>
+
+                            </div>
+                        );
+                    })}
+                    
 
                     <div className='container__infos__button'>
 
@@ -38,7 +56,7 @@ function Infos() {
                                         name={e.name}
                                     />
                                 </div>
-                          )
+                          );
                         })}
                     </div>
                 </div>
