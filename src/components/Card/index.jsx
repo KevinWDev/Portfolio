@@ -1,41 +1,62 @@
-// Hooks
-import { useNavigate } from 'react-router-dom';
+// Composants
+import Button from '../Button';
 // Styles
 import '../../utils/styles/Card.css';
 
+function Card({ cover, title, date, mission, problematique, links }) {
+  return (
 
-function Card({ id, image, title }) {
+    <div className="card">
 
-let navigate = useNavigate();
+      <div className="container__card__img">
+        <img className="card__img" src={cover} alt="" />
+      </div>
 
-function getInfos() {
-    let path = ("../infos/"+id);
-    navigate(path);
-};
+      <div className="container__card__infos">
+        <div>
+          <h2 className="card__title">{title}</h2>
+          <p className="card__date">
+            <span>Data : </span>
+            {date}
+          </p>
 
+          <aside className="card__mission">
+            <span>Mission :</span> <br />
+            {mission}
+          </aside>
 
-    return (
+          {problematique.map((e, index) => {
+            return (
+              <div>
+                <aside className="card__probleme">
+                  <span>Problèmes :</span>
+                  <br />
+                  {e.probleme}
+                </aside>
 
-        <div className='card' onClick={() => getInfos()}>
-          
-            <img className='card__img' src={image} alt="" />
-
-            <div className='card__hover'>
-
-                <div className='card__title__container'>
-                    <h2 className='card__title'>{title}</h2>
-                </div>
-
-                <div className='card__div__span'>
-                    <span className='card__span'>Voir plus</span>
-
-                </div>
-
-            </div>
-         
+                <aside className="card__solution">
+                  <span>Solutions :</span>
+                  <br />
+                  {e.solution}
+                </aside>
+              </div>
+            );
+          })}
         </div>
 
-    );
-};
+        <div className="container__infos__button">
+          {links.map((e, index) => {
+            return (
+              <div className="container__button">
+                <Button lien={e.link} name={e.name} />
+              </div>
+            );
+          })}
+        </div>
+
+      </div>
+    </div>
+  );
+}
 
 export default Card;

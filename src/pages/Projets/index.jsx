@@ -15,17 +15,22 @@ function Projets() {
 
       <section className="containerProjets">
         <div className="containerProjets__div">
-          <div className="containerProjets__div__grid">
+
             {data.map((data, index) => (
               <Card
                 id={data.id}
                 key={index}
-                image={data.cover}
+                cover={data.cover}
                 title={data.title}
+                date={data.date}
+                mission={data.mission}
+                problematique={data.problematique}
+                links={data.links}
+                
               />
             ))}
           </div>
-        </div>
+
       </section>
     </main>
   );

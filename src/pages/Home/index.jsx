@@ -55,10 +55,9 @@ function Home() {
             <p>
               Dans ce portfolio vous trouverez les différents projets que j’ai
               réalisés. <b>Passionné et motivé</b> aujourd’hui je souhaite
-              travailler en tant que développeur front-end
-              <b>
-                afin de développer mes compétences tout en produisant des
-                applications de qualité.
+              travailler en tant que développeur front-end <b>
+              afin de développer mes compétences tout en produisant des
+              applications de qualité.
               </b>
             </p>
           </div>
